@@ -1,0 +1,7 @@
+# Игнорировать изменения в .gitlab-ci.yml при слиянии
+.gitlab-ci.yml merge=ours
+
+# Игнорировать изменения в docker-compose.dev.yml при слиянии
+docker-compose.dev.yml merge=ours
+
+appsettings.json

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "brPJWkYt5eFdf3NE9ZoWTHHuk7M2ZYcvWJszOTvc4Fg=",
+  "Source": "NotifierSystemWebApiProducer",
+  "BasePath": "_content/NotifierSystemWebApiProducer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

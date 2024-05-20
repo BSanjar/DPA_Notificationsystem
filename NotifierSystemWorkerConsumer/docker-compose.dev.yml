@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  worker-consumer-notifier:
+    hostname: worker-consumer-notifier
+    build:
+      context: .
+      dockerfile: NotifierSystemWorkerConsumer/Dockerfile
+      args:
+#        - APP_ENV_FILE=.env.dev
+        - NODE_VERSION=20
+    ports:
+      - 3012:80

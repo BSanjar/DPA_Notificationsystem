@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  dev-telegram-notifier:
+    hostname: dev-telegram-notifier
+    build:
+      context: .
+      dockerfile: TelegramBot/Dockerfile
+      args:
+        - NODE_VERSION=20
+    ports:
+      - 3010:80

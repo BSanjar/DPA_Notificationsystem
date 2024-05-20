@@ -1,0 +1,31 @@
+stages:
+  - build
+  - apply
+
+before_script:
+  - uname -a
+
+# Dev deploy
+
+dev-run-build:
+  environment: main
+  stage: build
+  only:
+    - main
+  script:
+    - export COMPOSE_FILE=docker-compose.dev.yml
+    - docker compose -f $COMPOSE_FILE build
+  tags:
+    - dev-reestr
+
+dev-run-apply:
+  environment: main
+  stage: apply
+  only:
+    - main
+  script:
+    - export COMPOSE_FILE=docker-compose.dev.yml
+    - docker compose -f $COMPOSE_FILE build
+    - docker compose -f $COMPOSE_FILE up -d
+  tags:
+    - dev-reestr

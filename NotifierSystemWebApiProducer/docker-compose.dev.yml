@@ -1,0 +1,11 @@
+﻿version: '3.3'
+services:
+  webapi-producer-notifier:
+    hostname: webapi-producer-notifier
+    build:
+      context: .
+      dockerfile: NotifierSystemWebApiProducer/Dockerfile
+      args:
+        - NODE_VERSION=20
+    ports:
+      - 3011:80
